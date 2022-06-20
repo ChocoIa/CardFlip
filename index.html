@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="title">Paiement par carte de crédit</div>
+
+        <div class="ud-title"><span class="frais">Frais de transaction</span><span class="euro"> 0.00€</span></div>
+
+        <div class="card" id="cardFlip">
+
+            <div class="front">
+
+                <div class="card-number" id="card-number-card">################</div>
+
+                <div class="flexbox">
+
+                    <div class="box">
+                        <span class="card-holder">card holder</span>
+                        <div class="card-holder-name" id="name_card"></div>
+                    </div>
+
+                    <div class="box">
+                        <span class="expires">expires</span>
+
+                        <div class="expiration">
+                           <span class="month" id="expiration-date">MM/YY</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="back">
+
+                <div class="stripe"></div>
+
+                <div class="box">
+                    <span>cvv</span>
+                    <div class="cvv-box" id="ccvbox"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="formulaire">
+            <form action="">
+
+                <span class="details">Numéro de la carte</span>
+                <div class="input-box">
+                 <input type="text" pattern="[0-9]" maxlength="16" class="card-number1" id="card-number-form">
+                </div>
+
+                <span class="details">Titulaire de la carte</span>
+                <div class="input-box">
+                    <input type="text"  class="Nom" id="name_form">
+                </div>
+                
+                 <div class="pif2">
+                    <span class="details">Date d'expiration</span>
+                    <div class="input-box">
+                        <input type="text" pattern="[0-9]" maxlength="5" class="expiration-date" id="expiration-date-form">
+                    </div>
+                </div>
+                <div class="pif">
+                    <span class="details">Cryptogramme</span>
+                    <div class="input-box">
+                     <input type="text" pattern="[0-9]" maxlength="3" class="cvv" id="ccv">
+                     </div>
+                </div>
+                <input type="submit" value="Payer 35.49€" class="submit-btn">
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

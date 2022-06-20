@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+body {
+  background-color: #fefffe;
+}
+
+.formulaire {
+  text-align: center;
+  left: 50%;
+  position: absolute;
+  max-width: 500px;
+  width: 100%;
+  background-color: #cccdcd;
+}
+
+.pif2 {
+  float: left;
+  width: 50%;
+}
+
+.pif {
+  float: right;
+  width: 50%;
+}
+
+.container {
+  margin-top: 10rem;
+}
+
+.container .card {
+  position: relative;
+  width: 450px;
+  height: 250px;
+  border-radius: 5px;
+  float: left;
+  left: 20%;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+}
+
+
+.container .card .front .card-number {
+  padding: 30px 0;
+  font-size: 25px;
+  color: #fff;
+  margin-left: 25%;
+  margin-top: 20%;
+}
+
+.container .card .front .flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .card .front .flexbox .box:nth-child(1) {
+  margin-right: auto;
+}
+
+.container .card .front .flexbox .box {
+  font-size: 17px;
+  color: #fff;
+}
+
+.container .card .front .flexbox .box .card-holder {
+  margin-left: 20px;
+}
+
+.container .card .front .flexbox .box .card-holder-name {
+  margin-left: 20px;
+}
+
+.container .card .front .flexbox .box .expires {
+  margin-right: 20px;
+}
+
+.container .card .front {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #dddcdc;
+  border-radius: 5px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  -webkit-transform: perspective(1000px) rotateY(0deg);
+          transform: perspective(1000px) rotateY(0deg);
+  -webkit-transition: -webkit-transform .4s ease-out;
+  transition: -webkit-transform .4s ease-out;
+  transition: transform .4s ease-out;
+  transition: transform .4s ease-out, -webkit-transform .4s ease-out;
+}
+
+.container .card .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #dddcdc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: right;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  -webkit-transform: perspective(1000px) rotateY(180deg);
+          transform: perspective(1000px) rotateY(180deg);
+  -webkit-transition: -webkit-transform .4s ease-out;
+  transition: -webkit-transform .4s ease-out;
+  transition: transform .4s ease-out;
+  transition: transform .4s ease-out, -webkit-transform .4s ease-out;
+}
+
+.container .card .back .stripe {
+  background: #000;
+  width: 100%;
+  margin: 10px 0;
+  height: 50px;
+}
+
+.container .card .back .box {
+  padding: 0 20px;
+}
+
+.container .card .back .box span {
+  color: #fff;
+  font-size: 15px;
+}
+
+.container .card .back .box .cvv-box {
+  height: 50px;
+  padding: 10px;
+  margin-top: 5px;
+  color: #333;
+  background: #fff;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.container .title {
+  color: #ff5400;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.container .ud-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.container .frais {
+  color: #cccdcd;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.container .euro {
+  color: greenyellow;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+form {
+  position: relative;
+}
+
+form .details {
+  font-weight: 600;
+}
+
+form .input-box input {
+  height: 3rem;
+  margin-bottom: 3rem;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  width: 100%;
+  height: 4rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: #ff5400;
+  color: #fefffe;
+}
+/*# sourceMappingURL=styles.css.map */
