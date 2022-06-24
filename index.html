@@ -59,24 +59,24 @@
 
                 <span class="details">Numéro de la carte</span>
                 <div class="input-box">
-                 <input type="text" pattern="[0-9]" maxlength="16" class="card-number1" id="card-number-form">
+                 <input type="text" onkeypress="isInputNumber(event)" pattern="[0-9]" maxlength="16" class="card-number1" id="card-number-form">
                 </div>
 
                 <span class="details">Titulaire de la carte</span>
                 <div class="input-box">
-                    <input type="text"  class="Nom" id="name_form">
+                    <input type="text" onkeypress="lettersOnly(event)"  class="Nom" id="name_form">
                 </div>
                 
                  <div class="pif2">
                     <span class="details">Date d'expiration</span>
                     <div class="input-box">
-                        <input type="text" pattern="[0-9]" maxlength="5" class="expiration-date" id="expiration-date-form">
+                        <input type="text" onkeypress="isInputNumber(event)" pattern="[0-9]" maxlength="5" class="expiration-date" id="expiration-date-form">
                     </div>
                 </div>
                 <div class="pif">
                     <span class="details">Cryptogramme</span>
                     <div class="input-box">
-                     <input type="text" pattern="[0-9]" maxlength="3" class="cvv" id="ccv">
+                     <input type="text" onkeypress="isInputNumber(event)" pattern="[0-9]" maxlength="3" class="cvv" id="ccv">
                      </div>
                 </div>
                 <input type="submit" value="Payer 35.49€" class="submit-btn">
